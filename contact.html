@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: rgba(255, 255, 255, 0.55);
+        }
+
+        button {
+            background-color: #548fff;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+            button:hover {
+                opacity: 3;
+            }
+
+        .container {
+            padding: 16px;
+        }
+
+        .sgnup-content {
+            background-color: #d3ecff;
+            margin: 5% auto 15% auto;
+            border: 1px solid #888;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.truedata.ca/web/templates/asturias1.7/images/truedata.png" />
+    </div>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about-us.html">ABOUT US</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div id="id01" class="sgnup">
+        <form class="sgnup-content">
+            <div class="container">
+                <hr>
+                <label for="name"><b>First off, what is your name?</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+
+                <label for="email"><b>and your email?</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="phone"><b>Next, we would like to know your phone number for easier contact.</b></label>
+                <input type="text" placeholder="Enter Phone Number" />
+
+                <label for="device"><b>What device do you have that is experiencing the problem?</b></label>
+                <input type="text" placeholder="Device type" /> 
+
+                <label for="text"><b>Help us help you</b></label>
+                <input type="text" placeholder="What's your problem?" />
+
+                
+
+                <div class="clearfix">
+                    <button type="button" onClick="window.location.reload();" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
