@@ -1,3 +1,6 @@
+*{
+    font-family: Courier New, serif;
+}
 /*Header styling for all pages, basically keeps it at the top of the page (doesn't follow) and goes all the way across the screen.*/
 .header {
     position: absolute;
@@ -85,40 +88,16 @@ p {
         color: #0024ff;
     }
 
-.dropbtn {
-    background-color: #548fff;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+   #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    align-items: center;
+    grid-gap: 20px;
 }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #67bdd2;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
+    /*Additional sizing and design for the photo gallery*/
+    #gallery img {
+        max-width: 70%;
+        min-width: 350px;
+        border-radius: 5px 5px;
+        border: 3px solid black;    
     }
-
-        .dropdown-content a:hover {
-            background-color: #c1f3ff;
-        }
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
